@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------
+    Container
+-------------------------------------------------------------------*/
+.container {
+    width: 1024px
+}
+.col {
+    float: left
+}
+#wrapper.boxed {
+    max-width: 1084px
+}
+
+/*------------------------------------------------------------------
+    Header menu
+-------------------------------------------------------------------*/
+#wrapper.boxed #header .fixed {
+    max-width: 1084px;
+    left: initial
+}
+
+/*------------------------------------------------------------------
+    Parallax container
+-------------------------------------------------------------------*/
+.parallax_container,
+.parallax_container .parallax_element {
+    height: 550px
+}
+.parallax_container .parallax_header {
+    bottom: 30px;
+    width: 1024px;
+    margin-left: -512px
+}
+.parallax_container .parallax_header h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+#footer .widget {
+    float: left
+}

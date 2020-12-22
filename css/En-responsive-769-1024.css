@@ -1,0 +1,51 @@
+﻿@import url('En-responsive-0-768.css');
+
+.top_navigation,
+.language-block {
+    display: none;
+}
+
+.div-menu-logo {
+    width: 250px;
+    float: left;
+}
+
+.where-to-find-us-header {
+    margin-top: 0px;
+}
+
+.news-more-link {
+    margin-top: 7px;
+}
+
+
+
+.sticky {
+    display: none
+}
+/* ======================================================================================================
+   albums
+   =================================================================================================== */
+
+.li-photos {
+    width: 50%;
+}
+
+.media-resources {
+    width: 200px;
+    margin-right: 15px;
+    height: 230px;
+}
+
+.sp-horizontal .sp-arrows {
+    display: none
+}
+
+.sp-slide, .sp-mask {
+    height: 150px !important;
+}
+
+.li-services {
+    width: 49.5%;
+    margin-bottom: 10px;
+}

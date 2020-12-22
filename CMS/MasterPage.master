@@ -1,0 +1,141 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="CMS_MasterPage, App_Web_masterpage.master.dfaa92f0" %>
+
+<%@ Register Src="~/CMS/Controls/CMSHeader.ascx" TagName="CMSHeader" TagPrefix="ucCMSHeader" %>
+<%@ Register Src="~/CMS/Controls/Menu.ascx" TagName="Menu" TagPrefix="ucMenu" %>
+<%@ Register Src="~/CMS/Controls/Logo.ascx" TagName="Logo" TagPrefix="ucLogo" %>
+<%@ Register Src="~/CMS/Controls/Search.ascx" TagName="Serach" TagPrefix="ucSerach" %>
+<%@ Register Src="~/CMS/Controls/RightTreeView.ascx" TagPrefix="ucHeader" TagName="RightTreeView" %>
+<%@ Register Src="~/CMS/Controls/Footer.ascx" TagPrefix="ucHeader" TagName="Footer" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Imagine grp. : Content Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.css_Path %>/style.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.css_Path %>/loader-style.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.css_Path %>/bootstrap.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/css/footable.core.css?v=2-0-1" type="text/css" />
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/css/footable.standalone.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.css_Path %>/datatables.min.css" />
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.css_Path %>/Custom.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/jNotify/jNotify.jquery.css" />
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/wizard/css/jquery.steps.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/iCheck/flat/all.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/datepicker.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/clockface.css">
+    <link rel="stylesheet" href="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/bootstrap-datetimepicker.min.css">
+    <link href="../assets/<%= Resources.CMS_Resource.css_Path %>/colorbox.css" rel="stylesheet" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/minus.png">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm"></asp:ScriptManager>
+        <div class="Div_LoadingPage_Outer" id="Div_LoadingPage" style="display: none">
+            <div class="Div_LoadingPage">
+            </div>
+            <div class="Div_LoadingPage_WhiteSection">
+                <img src="../assets/img/ajax-loader.gif" alt="" /><p><%= Resources.CMS_Resource.PleaseWait%></p>
+            </div>
+        </div>
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+        <ucCMSHeader:CMSHeader ID="CMSHeader" runat="server" />
+        <div id="skin-select">
+            <ucLogo:Logo ID="Logo" runat="server" />
+            <ucSerach:Serach ID="Search" runat="server" />
+            <ucMenu:Menu ID="Menu" runat="server" />
+        </div>
+        <div class="wrap-fluid" id="wrap_fluid" runat="server">
+            <div class="container-fluid paper-wrap bevel tlbr">
+                <div class="row">
+                    <div id="paper-top">
+                        <div class="col-sm-4" runat="server" id="Div_Header_Title">
+                            <h2 class="tittle-content-header">
+                                <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="cphBreadcrumb" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="nest" id="FootableClose">
+                            <asp:UpdatePanel runat="server" ID="upMainSection" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <div class="title-alt">
+                                    </div>
+                                    <div class="BodyContent_Cls">
+                                        <asp:ContentPlaceHolder ID="cphBodyContent" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-space"></div>
+                <%--<div id="footer">
+                <ucHeader:Footer runat="server" ID="Footer1" />
+            </div>--%>
+            </div>
+        </div>
+        <div runat="server" id="sb_slidebar">
+            <ucHeader:RightTreeView runat="server" ID="RightTreeView" />
+        </div>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/UserEmails.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/slidebars/slidebars.min.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/preloader.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/bootstrap.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/app.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/load.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/jNotify/jNotify.jquery.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/js/footable.js?v=2-0-1"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/js/footable.sort.js?v=2-0-1"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/js/footable.filter.js?v=2-0-1"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/footable/js/footable.paginate.js?v=2-0-1"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/datatables.min.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/wizard/build/jquery.steps.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/iCheck/jquery.icheck.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/timepicker/bootstrap-timepicker.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/clockface.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/datepicker/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/jquery.colorbox.js"></script>
+        <script>
+            function GetValidationMsg(type) {
+                if (type == "Date") {
+                    return '<%= Resources.CMS_Resource.ERR_WrongDateFormat %>';
+                }
+                else if (type == "Number") {
+                    return '<%= Resources.CMS_Resource.ERR_ValueMustBeNumber %>';
+                }
+                else if (type == "Required") {
+                    return '<%= Resources.CMS_Resource.ERR_ThisFieldIsRequired %>';
+                }
+                else if (type == "Email") {
+                    return '<%= Resources.CMS_Resource.ERR_WrongEmailFormat %>';
+                }
+                else if (type == "Pass") {
+                    return '<%= Resources.CMS_Resource.Err_EmailComplex %>';
+                }
+            }
+        </script>
+        <script type="text/javascript" src="../assets/<%= Resources.CMS_Resource.js_Path %>/main.js"></script>
+    </form>
+</body>
+</html>

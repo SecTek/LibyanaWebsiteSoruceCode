@@ -1,0 +1,80 @@
+/*------------------------------------------------------------------
+    1. Container
+-------------------------------------------------------------------*/
+.container {
+    width: 970px
+}
+.col {
+    float: left
+}
+#wrapper.boxed {
+    max-width: 1020px
+}
+
+/*------------------------------------------------------------------
+    Header menu
+-------------------------------------------------------------------*/
+#wrapper.boxed #header .fixed {
+    max-width: 1020px;
+    left: initial
+}
+
+/*------------------------------------------------------------------
+    Parallax container
+-------------------------------------------------------------------*/
+.parallax_container,
+.parallax_container .parallax_element {
+    height: 450px
+}
+.parallax_container .parallax_header {
+    bottom: 30px;
+    width: 970px;
+    margin-left: -485px
+}
+.parallax_container .parallax_header h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+/*------------------------------------------------------------------
+    Grid block articles
+-------------------------------------------------------------------*/
+.grid_block_articles .item .inner {
+    height: 198px;
+}
+.grid_block_articles .item:first-child .inner {
+    height: 407px
+}
+
+/*------------------------------------------------------------------
+    Video list #1
+-------------------------------------------------------------------*/
+.video_list_1 .item .inner {
+    height: 142px
+}
+.video_list_1 .item:first-child .inner {
+    height: 286px
+}
+.video_list_1 .item:first-child .item_header {
+    height: 190px
+}
+.video_list_1 .item .item_header {
+    height: 142px
+}
+
+/*------------------------------------------------------------------
+    Breaking news
+-------------------------------------------------------------------*/
+.breaking_news .breaking_block {
+    width: 816px
+}
+.breaking_news .breaking_block .owl-wrapper-outer {
+    width: 776px
+}
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+#footer .widget {
+    float: left
+}

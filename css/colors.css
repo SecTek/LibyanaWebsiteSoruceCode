@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------
+    Colors
+    (links, logo first letter, post meta icon, video list title, title
+    icon, block tabs active, blockquotes, service box first letter,
+    controls single post)
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Normal
+-------------------------------------------------------------------*/
+a,
+.logo_brand h1:first-letter,
+.content_meta span:after,
+.block_title a.view_all i,
+blockquote.alt:before,
+.service_box h4:first-letter,
+.pricing_box .body ul li i,
+footer.post_footer .post_controls .prev_post:hover span,
+footer.post_footer .post_controls .next_post:hover span,
+.pullquotes {
+    color: #349dc9
+}
+
+/*------------------------------------------------------------------
+    Hover
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    Background colors
+    (button, inputs[buttons],site navigation current, sub menu,
+    calendar box, background color, video item label, review label
+    mobile menu toggle, tags, calendar links, review posts widget,
+    breaking news title, pricing box header, accordion background,
+    review lines, shop product label onsale)
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Normal
+-------------------------------------------------------------------*/
+button,
+nav.site_navigation ul.menu > li:hover > a,
+nav.site_navigation ul.menu > li.current-menu-item > a,
+.big_calendar_box,
+.video_list .item .transition_line,
+.video_list_1 .item .transition_line,
+.video_list .item .label,
+.video_list_1 .item .label,
+.review_list .item .label,
+.header_menu .open_menu_mobile,
+.header_meta .open_menu_mobile,
+.tagcloud a,
+.widget_calendar tbody a,
+.header_border,
+.widget_review_posts .item .item_header .rate_stars,
+.breaking_news .breaking_title,
+.pricing_box .header,
+.accordion_group.colored .accordion_title,
+.tab_group.colored .ui-tabs-nav li.ui-tabs-active,
+.editor_review .review_group .review .review_footer span,
+.editor_review .review_summary .item_header,
+.price_slider_wrapper .ui-slider-range,
+.onsale {
+    background-color: #349dc9
+}
+/*------------------------------------------------------------------
+    Hover
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    Border
+    (header, block title, widget title, blockquotes)
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+    Normal
+-------------------------------------------------------------------*/
+.content_wrapper,
+.block_title h2,
+.widget .widget_title h4,
+.block_title .ui-tabs-nav li.ui-tabs-active,
+blockquote {
+    border-color: #349dc9
+}
+
+/*------------------------------------------------------------------
+    Hover
+-------------------------------------------------------------------*/

@@ -1,0 +1,274 @@
+
+
+/*------------------------------------------------------------------
+    Container
+-------------------------------------------------------------------*/
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+/*------------------------------------------------------------------
+    Header
+-------------------------------------------------------------------*/
+.header_main-parent {
+    height: auto !important;
+}
+
+#header .fixed {
+    position: static !important;
+}
+
+/*------------------------------------------------------------------
+    Top navigation
+-------------------------------------------------------------------*/
+nav.top_navigation {
+    float: none;
+}
+
+    nav.top_navigation ul.menu {
+        display: none;
+    }
+
+.search_block {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.open_menu_mobile {
+    display: block;
+}
+
+/*------------------------------------------------------------------
+    Site navigation
+-------------------------------------------------------------------*/
+nav.site_navigation ul.menu {
+    display: none;
+}
+
+nav.site_navigation .widget {
+    width: 100%;
+    float: none;
+    display: block;
+    clear: both;
+    padding: 0;
+}
+
+/*------------------------------------------------------------------
+    Parallax container
+-------------------------------------------------------------------*/
+.parallax_container,
+.parallax_container .parallax_element {
+    height: 350px;
+}
+
+    .parallax_container .parallax_header {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        left: 0;
+    }
+
+        .parallax_container .parallax_header h1 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 600;
+        }
+
+/*------------------------------------------------------------------
+    Grid block articles
+-------------------------------------------------------------------*/
+.grid_block_articles .item {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+    .grid_block_articles .item:first-child {
+        width: 100%;
+    }
+
+        .grid_block_articles .item:first-child .inner,
+        .grid_block_articles .item .inner {
+            margin: 0;
+            height: auto;
+        }
+
+        .grid_block_articles .item:first-child .meta_wrapper h3,
+        .grid_block_articles .item .meta_wrapper h3 {
+            font-size: 14px;
+            line-height: 20px;
+            overflow: hidden;
+            max-height: 40px;
+        }
+
+    .grid_block_articles .item .meta_wrapper h3 {
+        max-height: 40px;
+    }
+
+    .grid_block_articles .item:first-child .meta_wrapper h3 {
+        max-height: none;
+    }
+
+    .grid_block_articles .item .meta_wrapper .content_meta {
+        display: none;
+    }
+
+/*------------------------------------------------------------------
+    Breaking news
+-------------------------------------------------------------------*/
+.breaking_news .breaking_title,
+.breaking_news .breaking_block .owl-controls {
+    display: none;
+}
+
+.breaking_news .breaking_block .owl-wrapper-outer,
+.breaking_news .breaking_block {
+    width: 100%;
+}
+
+/*------------------------------------------------------------------
+    Video list #1
+-------------------------------------------------------------------*/
+.video_list_1 .item {
+    width: 50%;
+}
+
+    .video_list_1 .item .inner,
+    .video_list_1 .item .item_header {
+        margin: 0;
+    }
+
+    .video_list_1 .item:first-child {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+        .video_list_1 .item:first-child .inner {
+            height: auto;
+        }
+
+        .video_list_1 .item:first-child .item_wrapper {
+            padding-bottom: 10px;
+        }
+
+        .video_list_1 .item:first-child .item_header {
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .video_list_1 .item:first-child .item_content {
+            max-height: none;
+        }
+
+
+/*------------------------------------------------------------------
+    Review block
+-------------------------------------------------------------------*/
+.review_list.two .item,
+.review_list.three .item,
+.review_list.four .item,
+.video_list.two .item,
+.video_list.three .item,
+.video_list.four .item {
+    float: none;
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+
+/*------------------------------------------------------------------
+    Gallery list #1
+-------------------------------------------------------------------*/
+.gallery_list.two .item,
+.gallery_list.three .item,
+.gallery_list.four .item,
+.gallery_list.five .item {
+    width: 50%;
+}
+
+/*------------------------------------------------------------------
+    Single article
+-------------------------------------------------------------------*/
+footer.post_footer .post_sharing a {
+    width: 49.5%;
+    margin-right: 1%;
+    margin-bottom: 5px;
+}
+
+    footer.post_footer .post_sharing a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+/*------------------------------------------------------------------
+    Shop
+-------------------------------------------------------------------*/
+ul.products li.product {
+    clear: left;
+}
+
+ul.products.three li.product,
+ul.products.four li.product {
+    width: 48%;
+    margin-right: 2%;
+}
+
+ul.products li.product:nth-child(2n) {
+    float: right;
+    clear: none;
+    margin-right: 0;
+}
+
+/*------------------------------------------------------------------
+    Shop single
+-------------------------------------------------------------------*/
+div.product .images {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+    display: block;
+    clear: both;
+}
+
+    div.product .images .thumbnails a {
+        width: 50px;
+    }
+
+div.product .summary {
+    width: 100%;
+    float: none;
+    display: block;
+    clear: both;
+}
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+#footer.two .widget,
+#footer.three .widget,
+#footer.four .widget {
+    width: 100%;
+    float: none;
+    display: block;
+    clear: both;
+}
+
+#footer .col_7_of_12 {
+    width: 70% !important;
+    margin: 0 15%;
+}
+
+.fa-search {
+    position: relative;
+    top: -4px;
+}

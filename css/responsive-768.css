@@ -1,0 +1,78 @@
+/*------------------------------------------------------------------
+    1. Container
+-------------------------------------------------------------------*/
+.container {
+    width: 750px
+}
+.col {
+    width: 100%;
+    display: block;
+    clear: both
+}
+#wrapper.boxed {
+    max-width: 800px
+}
+
+/*------------------------------------------------------------------
+    Header menu
+-------------------------------------------------------------------*/
+#wrapper.boxed #header .fixed {
+    max-width: 800px;
+    left: initial
+}
+
+/*------------------------------------------------------------------
+    Site navigation
+-------------------------------------------------------------------*/
+nav.site_navigation ul.menu > li > a {
+    font-size: 14px;
+    padding: 0px 5px
+}
+
+/*------------------------------------------------------------------
+    Parallax container
+-------------------------------------------------------------------*/
+.parallax_container,
+.parallax_container .parallax_element {
+    height: 350px
+}
+.parallax_container .parallax_header {
+    bottom: 30px;
+    width: 750px;
+    margin-left: -375px
+}
+.parallax_container .parallax_header h1 {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+/*------------------------------------------------------------------
+    Grid block articles
+-------------------------------------------------------------------*/
+.grid_block_articles .item .inner {
+    height: 152px;
+}
+.grid_block_articles .item:first-child .inner {
+    height: 315px
+}
+.grid_block_articles .item .meta_wrapper h3 {
+    font-size: 14px;
+    line-height: 20px
+}
+
+/*------------------------------------------------------------------
+    Breaking news
+-------------------------------------------------------------------*/
+.breaking_news .breaking_block {
+    width: 596px
+}
+.breaking_news .breaking_block .owl-wrapper-outer {
+    width: 556px
+}
+
+/*------------------------------------------------------------------
+    Footer
+-------------------------------------------------------------------*/
+#footer .widget {
+    float: left
+}

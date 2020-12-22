@@ -1,0 +1,87 @@
+﻿<root>
+  <tools>
+    <tool Name="Print" />
+    <tool Name="AjaxSpellCheck" />
+    <tool Name="FindAndReplace" />
+    <tool Name="SelectAll" />
+    <tool Name="Copy" />
+    <tool Name="cut" />
+    <tool Name="paste" />
+    <tool Name="PasteStrip" />
+  </tools>
+  <tools>
+    <tool Name="Undo" />
+    <tool Name="Redo" />
+  </tools>
+  <tools >
+    <tool Name="ImageManager" />
+    <tool Name="FlashManager" />
+    <tool Name="MediaManager" />
+    <tool Name="DocumentManager" />
+    <tool Name="TemplateManager" />
+  </tools>
+  <tools>
+    <tool Name="LinkManager" />
+    <tool Name="Unlink" />
+  </tools>
+  <tools>
+    <tool Name="Superscript" />
+    <tool Name="Subscript" />
+    <tool Name="InsertParagraph" />
+    <tool Name="InsertGroupbox" />
+    <tool Name="InsertHorizontalRule" />
+    <tool Name="InsertDate" />
+    <tool Name="InsertTime" />
+  </tools>
+  <tools>
+    <tool Name="FormatCodeBlock" />
+  </tools>
+  <tools>
+    <tool Name="FormatBlock" />
+    <tool Name="FontName" />
+    <tool Name="RealFontSize" />
+  </tools>
+  <tools>
+    <tool Name="AbsolutePosition" />
+  </tools>
+  <tools>
+    <tool Name="Bold" />
+    <tool Name="Italic" />
+    <tool Name="Underline" />
+    <tool Name="StrikeThrough" />
+  </tools>
+  <tools>
+    <tool Name="JustifyLeft" />
+    <tool Name="JustifyCenter" />
+    <tool Name="JustifyRight" />
+    <tool Name="JustifyFull" />
+    <tool Name="JustifyNone" />
+  </tools>
+  <tools>
+    <tool Name="Indent" />
+    <tool Name="Outdent" />
+  </tools>
+  <tools>
+    <tool Name="InsertOrderedList" />
+    <tool Name="InsertUnorderedList" />
+  </tools>
+  <tools>
+    <tool Name="ToggleTableBorder" />
+    <tool Name="XhtmlValidator" />
+    <tool Name="ConvertToLower" />
+    <tool Name="ConvertToUpper" />
+  </tools>
+  <tools>
+    <tool Name="ForeColor" />
+    <tool Name="BackColor" />
+    <tool Name="ApplyClass" />
+    <tool Name="FormatStripper" />
+    <tool Name="InsertSymbol" />
+    <tool Name="InsertTable" />
+    <tool Name="InsertFormElement" />
+    <tool Name="StyleBuilder" />
+    <tool Name="ImageMapDialog" />
+    <tool Name="InsertCustomLink" />
+  </tools>
+
+</root>
